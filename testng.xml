@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="C:/Users/KORISNIK/Projects/Hostaway">
+        <classes>
+            <class name="web.tests.AllListingsTest">
+                <methods>
+                    <include name="allListingsTest"/>
+                </methods>
+            </class>
+            <class name="web.tests.FiltersFormTest">
+                <methods>
+                    <include name="entryFieldsTest"/>
+                    <include name="valueRangeTestNegative"/>
+                    <include name="valueRangeTestPositive"/>
+                    <include name="roomsAndBedsValuesTest"/>
+                    <include name="amenitiesCheckboxesTest"/>
+                    <include name="clearAllTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
